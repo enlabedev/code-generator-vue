@@ -1,3 +1,28 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  @apply flex justify-center items-center
+}
+
+.title{
+  @apply text-2xl font-bold mb-4
+}
+.text{
+  @apply mb-4
+}
+.input{
+  width:300px;
+  @apply mx-auto bg-white text-left border border-black block text-black;
+  &.result{
+    @apply bg-gray-100 border mt-0 border-gray-300;
+  }
+}
+
+.button{
+  width:300px;
+  @apply block mx-auto text-center bg-black text-white;
+}
